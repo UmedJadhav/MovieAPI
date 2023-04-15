@@ -15,8 +15,8 @@ func (m MockMovieModel) Get(id int64) (*Movie, error) {
 	return nil, nil
 }
 
-func (m MockMovieModel) GetAll(title string, genres []string, filters Filters) ([]*Movie, error) {
-	return nil, nil
+func (m MockMovieModel) GetAll(title string, genres []string, filters Filters) ([]*Movie, Metadata, error) {
+	return nil, Metadata{}, nil
 }
 
 func (m MockMovieModel) Update(movie *Movie) error {
