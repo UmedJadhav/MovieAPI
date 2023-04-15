@@ -209,6 +209,4 @@ func (app *application) listMoviesHandler(w http.ResponseWriter, r *http.Request
 	if err != nil {
 		app.serverErrorResponse(w, r, err)
 	}
-
-	fmt.Fprintf(w, "%+v\n", input)
 }
